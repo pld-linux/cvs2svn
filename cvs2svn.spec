@@ -1,7 +1,5 @@
 %include	/usr/lib/rpm/macros.python
-Summary:	A Concurrent Versioning system similar to but better than CVS
-Summary(pl):	System kontroli wersji podobny, ale lepszy, ni¿ CVS
-Summary(pt_BR):	Sistema de versionamento concorrente
+Summary:	VS to Subversion Repository Converter
 Name:		cvs2svn
 Version:	0.1236
 Release:	1
@@ -10,13 +8,12 @@ Group:		Development/Version Control
 Source0:	http://cvs2svn.tigris.org/files/documents/1462/14568/%{name}-%{version}.tar.gz
 # Source0-md5:	8b356fadd220d96032b37b3d91bc22e9
 URL:		http://cvs2svn.tigris.org/
-Requires:	%{name}-libs = %{version}-%{release}
-Requires:	python-subversion = %{version}
+Requires:	python-subversion >= 1.0.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-The goal of the Subversion project is to build a version control
+VS to Subversion Repository Converter.
 
 %prep
 %setup -q
