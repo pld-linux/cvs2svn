@@ -1,4 +1,3 @@
-%include	/usr/lib/rpm/macros.python
 Summary:	CVS to Subversion Repository Converter
 Summary(pl):	Konwerter repozytoriów CVS do Subversion
 Name:		cvs2svn
