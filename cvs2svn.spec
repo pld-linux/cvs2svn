@@ -37,5 +37,5 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BUGS COMMITTERS README design-notes.txt
 %attr(755,root,root) %{_bindir}/*
-%dir %{py_sitedir}/cvs2svn_rcsparse
-%{py_sitedir}/cvs2svn_rcsparse/*.*[co]
+%dir %{py_scriptdir}/site-packages/cvs2svn_rcsparse
+%{py_scriptdir}/site-packages/cvs2svn_rcsparse/*.*[co]
