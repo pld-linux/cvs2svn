@@ -12,6 +12,7 @@ Source0:	http://cvs2svn.tigris.org/files/documents/1462/14568/%{name}-%{version}
 URL:		http://cvs2svn.tigris.org/
 Requires:	%{name}-libs = %{version}-%{release}
 Requires:	python-subversion = %{version}
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
