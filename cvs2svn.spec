@@ -33,6 +33,8 @@ python setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
+rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/*/*.py
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -40,5 +42,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BUGS COMMITTERS README design-notes.txt
 %attr(755,root,root) %{_bindir}/*
-%dir %{py_sitescriptdir}/cvs2svn_rcsparse
-%{py_sitescriptdir}/cvs2svn_rcsparse/*.*[co]
+%{py_sitescriptdir}/cvs2svn_rcsparse
