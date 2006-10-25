@@ -12,6 +12,7 @@ Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{_documentid}/%{name}-%
 URL:		http://cvs2svn.tigris.org/
 BuildRequires:	python
 %pyrequires_eq	python-modules
+Requires:	rcs
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
