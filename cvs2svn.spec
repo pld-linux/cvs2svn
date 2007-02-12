@@ -1,7 +1,7 @@
 %define		_documentid	34574
 
 Summary:	CVS to Subversion Repository Converter
-Summary(pl.UTF-8):   Konwerter repozytoriów CVS do Subversion
+Summary(pl.UTF-8):	Konwerter repozytoriów CVS do Subversion
 Name:		cvs2svn
 Version:	1.5.0
 Release:	1
