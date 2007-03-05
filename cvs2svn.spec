@@ -1,14 +1,14 @@
-%define		_documentid	34574
+%define		_documentid	36129
 
 Summary:	CVS to Subversion Repository Converter
 Summary(pl.UTF-8):	Konwerter repozytoriów CVS do Subversion
 Name:		cvs2svn
-Version:	1.5.0
+Version:	1.5.1
 Release:	1
 License:	Apache/BSD-like
 Group:		Development/Version Control
 Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{_documentid}/%{name}-%{version}.tar.gz
-# Source0-md5:	dc5bf68303498542cfa061f7ae79d9dd
+# Source0-md5:	d1e42ea51b373be0023f2b3f6b80ec01
 URL:		http://cvs2svn.tigris.org/
 BuildRequires:	python
 %pyrequires_eq	python-modules
