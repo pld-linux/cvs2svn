@@ -10,7 +10,8 @@ Group:		Development/Version Control
 Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{_documentid}/%{name}-%{version}.tar.gz
 # Source0-md5:	df6d42c94f99aeedffa8c438dbb7ac3d
 URL:		http://cvs2svn.tigris.org/
-BuildRequires:	python
+BuildRequires:	python >= 1:2.5
+BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 Requires:	rcs
 BuildArch:	noarch
