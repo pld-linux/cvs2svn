@@ -1,14 +1,14 @@
-%define		_documentid	41596
+%define		_documentid	42521
 
 Summary:	CVS to Subversion or GIT Repository Converter
 Summary(pl.UTF-8):	Konwerter repozytoriów CVS do Subversion lub GIT
 Name:		cvs2svn
-Version:	2.1.0
+Version:	2.1.1
 Release:	1
 License:	Apache/BSD-like
 Group:		Development/Version Control
 Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{_documentid}/%{name}-%{version}.tar.gz
-# Source0-md5:	df6d42c94f99aeedffa8c438dbb7ac3d
+# Source0-md5:	c1d5d97848658acdc293805b08e12959
 URL:		http://cvs2svn.tigris.org/
 BuildRequires:	python >= 1:2.5
 BuildRequires:	rpm-pythonprov
