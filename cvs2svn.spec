@@ -50,5 +50,5 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %{py_sitescriptdir}/cvs2svn_rcsparse
 %{py_sitescriptdir}/cvs2svn_lib
-#%{py_sitescriptdir}/*.egg-info
+%{py_sitescriptdir}/*.egg-info
 %{_mandir}/*/*
