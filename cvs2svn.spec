@@ -1,5 +1,4 @@
-%define		_documentid	46528
-
+%define		documentid	46528
 Summary:	CVS to Subversion or GIT Repository Converter
 Summary(pl.UTF-8):	Konwerter repozytoriów CVS do Subversion lub GIT
 Name:		cvs2svn
@@ -7,10 +6,10 @@ Version:	2.3.0
 Release:	1
 License:	Apache/BSD-like
 Group:		Development/Version Control
-Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{_documentid}/%{name}-%{version}.tar.gz
+Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{documentid}/%{name}-%{version}.tar.gz
 # Source0-md5:	6c412baec974f3ff64b9145944682a15
 URL:		http://cvs2svn.tigris.org/
-BuildRequires:	python-devel >= 1:2.5
+BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
 Requires:	rcs
@@ -27,13 +26,12 @@ Konwerter repozytoriów CVS do Subversion lub GIT.
 %setup -q
 
 %build
-python setup.py build
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mandir}/man1
-
-python setup.py install \
+%{__python} setup.py install \
 	--root=$RPM_BUILD_ROOT \
 	--optimize=2
 
@@ -46,7 +44,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc BUGS COMMITTERS README
 %doc www
-%attr(755,root,root) %{_bindir}/*
+%attr(755,root,root) %{_bindir}/cvs2bzr
+%attr(755,root,root) %{_bindir}/cvs2git
+%attr(755,root,root) %{_bindir}/cvs2svn
 %{py_sitescriptdir}/cvs2svn_rcsparse
 %{py_sitescriptdir}/cvs2svn_lib
+%if "%{py_ver}" > "2.4"
 %{py_sitescriptdir}/*.egg-info
+%endif
