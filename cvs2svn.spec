@@ -3,7 +3,7 @@ Summary:	CVS to Subversion or GIT Repository Converter
 Summary(pl.UTF-8):	Konwerter repozytoriów CVS do Subversion lub GIT
 Name:		cvs2svn
 Version:	2.3.0
-Release:	2
+Release:	3
 License:	Apache/BSD-like
 Group:		Development/Version Control
 Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{documentid}/%{name}-%{version}.tar.gz
