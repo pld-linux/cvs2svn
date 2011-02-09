@@ -1,13 +1,15 @@
 %define		documentid	46528
+%define		subver		r15319
+%define		rel		1
 Summary:	CVS to Subversion or GIT Repository Converter
 Summary(pl.UTF-8):	Konwerter repozytoriów CVS do Subversion lub GIT
 Name:		cvs2svn
 Version:	2.3.0
-Release:	3
+Release:	3.%{subver}.%{rel}
 License:	Apache/BSD-like
 Group:		Development/Version Control
-Source0:	http://cvs2svn.tigris.org/files/documents/1462/%{documentid}/%{name}-%{version}.tar.gz
-# Source0-md5:	6c412baec974f3ff64b9145944682a15
+Source0:	%{name}-r15319.tar.bz2
+# Source0-md5:	f3de6d9ed0673b9de173e51e1912763b
 URL:		http://cvs2svn.tigris.org/
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
@@ -23,7 +25,7 @@ CVS to Subversion or GIT Repository Converter.
 Konwerter repozytoriów CVS do Subversion lub GIT.
 
 %prep
-%setup -q
+%setup -q -n %{name}-trunk
 
 %build
 %{__python} setup.py build
