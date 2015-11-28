@@ -28,14 +28,12 @@ Konwerter repozytoriów CVS do Subversion lub GIT.
 %setup -q -n %{name}-trunk
 
 %build
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_mandir}/man1
-%{__python} setup.py install \
-	--root=$RPM_BUILD_ROOT \
-	--optimize=2
+%py_install
 
 rm -f $RPM_BUILD_ROOT%{py_sitescriptdir}/*/*.py
 
