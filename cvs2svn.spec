@@ -11,6 +11,7 @@ Group:		Development/Version Control
 Source0:	%{name}-r15319.tar.bz2
 # Source0-md5:	f3de6d9ed0673b9de173e51e1912763b
 URL:		http://cvs2svn.tigris.org/
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 %pyrequires_eq	python-modules
